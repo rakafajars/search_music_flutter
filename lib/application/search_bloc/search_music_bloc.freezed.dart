@@ -252,7 +252,7 @@ mixin _$SearchMusicState {
     required TResult Function(_Initial value) initial,
     required TResult Function(_LoadInProgress value) loadInProgress,
     required TResult Function(_LoadFailure value) loadFailure,
-    required TResult Function(_getSearchMusicSuccess value)
+    required TResult Function(_GetSearchMusicSuccess value)
         getSearchMusicSuccess,
   }) =>
       throw _privateConstructorUsedError;
@@ -261,7 +261,7 @@ mixin _$SearchMusicState {
     TResult Function(_Initial value)? initial,
     TResult Function(_LoadInProgress value)? loadInProgress,
     TResult Function(_LoadFailure value)? loadFailure,
-    TResult Function(_getSearchMusicSuccess value)? getSearchMusicSuccess,
+    TResult Function(_GetSearchMusicSuccess value)? getSearchMusicSuccess,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -269,7 +269,7 @@ mixin _$SearchMusicState {
     TResult Function(_Initial value)? initial,
     TResult Function(_LoadInProgress value)? loadInProgress,
     TResult Function(_LoadFailure value)? loadFailure,
-    TResult Function(_getSearchMusicSuccess value)? getSearchMusicSuccess,
+    TResult Function(_GetSearchMusicSuccess value)? getSearchMusicSuccess,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -375,7 +375,7 @@ class _$_Initial implements _Initial {
     required TResult Function(_Initial value) initial,
     required TResult Function(_LoadInProgress value) loadInProgress,
     required TResult Function(_LoadFailure value) loadFailure,
-    required TResult Function(_getSearchMusicSuccess value)
+    required TResult Function(_GetSearchMusicSuccess value)
         getSearchMusicSuccess,
   }) {
     return initial(this);
@@ -387,7 +387,7 @@ class _$_Initial implements _Initial {
     TResult Function(_Initial value)? initial,
     TResult Function(_LoadInProgress value)? loadInProgress,
     TResult Function(_LoadFailure value)? loadFailure,
-    TResult Function(_getSearchMusicSuccess value)? getSearchMusicSuccess,
+    TResult Function(_GetSearchMusicSuccess value)? getSearchMusicSuccess,
   }) {
     return initial?.call(this);
   }
@@ -398,7 +398,7 @@ class _$_Initial implements _Initial {
     TResult Function(_Initial value)? initial,
     TResult Function(_LoadInProgress value)? loadInProgress,
     TResult Function(_LoadFailure value)? loadFailure,
-    TResult Function(_getSearchMusicSuccess value)? getSearchMusicSuccess,
+    TResult Function(_GetSearchMusicSuccess value)? getSearchMusicSuccess,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -496,7 +496,7 @@ class _$_LoadInProgress implements _LoadInProgress {
     required TResult Function(_Initial value) initial,
     required TResult Function(_LoadInProgress value) loadInProgress,
     required TResult Function(_LoadFailure value) loadFailure,
-    required TResult Function(_getSearchMusicSuccess value)
+    required TResult Function(_GetSearchMusicSuccess value)
         getSearchMusicSuccess,
   }) {
     return loadInProgress(this);
@@ -508,7 +508,7 @@ class _$_LoadInProgress implements _LoadInProgress {
     TResult Function(_Initial value)? initial,
     TResult Function(_LoadInProgress value)? loadInProgress,
     TResult Function(_LoadFailure value)? loadFailure,
-    TResult Function(_getSearchMusicSuccess value)? getSearchMusicSuccess,
+    TResult Function(_GetSearchMusicSuccess value)? getSearchMusicSuccess,
   }) {
     return loadInProgress?.call(this);
   }
@@ -519,7 +519,7 @@ class _$_LoadInProgress implements _LoadInProgress {
     TResult Function(_Initial value)? initial,
     TResult Function(_LoadInProgress value)? loadInProgress,
     TResult Function(_LoadFailure value)? loadFailure,
-    TResult Function(_getSearchMusicSuccess value)? getSearchMusicSuccess,
+    TResult Function(_GetSearchMusicSuccess value)? getSearchMusicSuccess,
     required TResult orElse(),
   }) {
     if (loadInProgress != null) {
@@ -650,7 +650,7 @@ class _$_LoadFailure implements _LoadFailure {
     required TResult Function(_Initial value) initial,
     required TResult Function(_LoadInProgress value) loadInProgress,
     required TResult Function(_LoadFailure value) loadFailure,
-    required TResult Function(_getSearchMusicSuccess value)
+    required TResult Function(_GetSearchMusicSuccess value)
         getSearchMusicSuccess,
   }) {
     return loadFailure(this);
@@ -662,7 +662,7 @@ class _$_LoadFailure implements _LoadFailure {
     TResult Function(_Initial value)? initial,
     TResult Function(_LoadInProgress value)? loadInProgress,
     TResult Function(_LoadFailure value)? loadFailure,
-    TResult Function(_getSearchMusicSuccess value)? getSearchMusicSuccess,
+    TResult Function(_GetSearchMusicSuccess value)? getSearchMusicSuccess,
   }) {
     return loadFailure?.call(this);
   }
@@ -673,7 +673,7 @@ class _$_LoadFailure implements _LoadFailure {
     TResult Function(_Initial value)? initial,
     TResult Function(_LoadInProgress value)? loadInProgress,
     TResult Function(_LoadFailure value)? loadFailure,
-    TResult Function(_getSearchMusicSuccess value)? getSearchMusicSuccess,
+    TResult Function(_GetSearchMusicSuccess value)? getSearchMusicSuccess,
     required TResult orElse(),
   }) {
     if (loadFailure != null) {
@@ -693,32 +693,32 @@ abstract class _LoadFailure implements SearchMusicState {
 }
 
 /// @nodoc
-abstract class _$$_getSearchMusicSuccessCopyWith<$Res> {
-  factory _$$_getSearchMusicSuccessCopyWith(_$_getSearchMusicSuccess value,
-          $Res Function(_$_getSearchMusicSuccess) then) =
-      __$$_getSearchMusicSuccessCopyWithImpl<$Res>;
+abstract class _$$_GetSearchMusicSuccessCopyWith<$Res> {
+  factory _$$_GetSearchMusicSuccessCopyWith(_$_GetSearchMusicSuccess value,
+          $Res Function(_$_GetSearchMusicSuccess) then) =
+      __$$_GetSearchMusicSuccessCopyWithImpl<$Res>;
   $Res call({SearchMusicResponse searchMusicResponse});
 
   $SearchMusicResponseCopyWith<$Res> get searchMusicResponse;
 }
 
 /// @nodoc
-class __$$_getSearchMusicSuccessCopyWithImpl<$Res>
+class __$$_GetSearchMusicSuccessCopyWithImpl<$Res>
     extends _$SearchMusicStateCopyWithImpl<$Res>
-    implements _$$_getSearchMusicSuccessCopyWith<$Res> {
-  __$$_getSearchMusicSuccessCopyWithImpl(_$_getSearchMusicSuccess _value,
-      $Res Function(_$_getSearchMusicSuccess) _then)
-      : super(_value, (v) => _then(v as _$_getSearchMusicSuccess));
+    implements _$$_GetSearchMusicSuccessCopyWith<$Res> {
+  __$$_GetSearchMusicSuccessCopyWithImpl(_$_GetSearchMusicSuccess _value,
+      $Res Function(_$_GetSearchMusicSuccess) _then)
+      : super(_value, (v) => _then(v as _$_GetSearchMusicSuccess));
 
   @override
-  _$_getSearchMusicSuccess get _value =>
-      super._value as _$_getSearchMusicSuccess;
+  _$_GetSearchMusicSuccess get _value =>
+      super._value as _$_GetSearchMusicSuccess;
 
   @override
   $Res call({
     Object? searchMusicResponse = freezed,
   }) {
-    return _then(_$_getSearchMusicSuccess(
+    return _then(_$_GetSearchMusicSuccess(
       searchMusicResponse == freezed
           ? _value.searchMusicResponse
           : searchMusicResponse // ignore: cast_nullable_to_non_nullable
@@ -737,8 +737,8 @@ class __$$_getSearchMusicSuccessCopyWithImpl<$Res>
 
 /// @nodoc
 
-class _$_getSearchMusicSuccess implements _getSearchMusicSuccess {
-  const _$_getSearchMusicSuccess(this.searchMusicResponse);
+class _$_GetSearchMusicSuccess implements _GetSearchMusicSuccess {
+  const _$_GetSearchMusicSuccess(this.searchMusicResponse);
 
   @override
   final SearchMusicResponse searchMusicResponse;
@@ -752,7 +752,7 @@ class _$_getSearchMusicSuccess implements _getSearchMusicSuccess {
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_getSearchMusicSuccess &&
+            other is _$_GetSearchMusicSuccess &&
             const DeepCollectionEquality()
                 .equals(other.searchMusicResponse, searchMusicResponse));
   }
@@ -763,8 +763,8 @@ class _$_getSearchMusicSuccess implements _getSearchMusicSuccess {
 
   @JsonKey(ignore: true)
   @override
-  _$$_getSearchMusicSuccessCopyWith<_$_getSearchMusicSuccess> get copyWith =>
-      __$$_getSearchMusicSuccessCopyWithImpl<_$_getSearchMusicSuccess>(
+  _$$_GetSearchMusicSuccessCopyWith<_$_GetSearchMusicSuccess> get copyWith =>
+      __$$_GetSearchMusicSuccessCopyWithImpl<_$_GetSearchMusicSuccess>(
           this, _$identity);
 
   @override
@@ -813,7 +813,7 @@ class _$_getSearchMusicSuccess implements _getSearchMusicSuccess {
     required TResult Function(_Initial value) initial,
     required TResult Function(_LoadInProgress value) loadInProgress,
     required TResult Function(_LoadFailure value) loadFailure,
-    required TResult Function(_getSearchMusicSuccess value)
+    required TResult Function(_GetSearchMusicSuccess value)
         getSearchMusicSuccess,
   }) {
     return getSearchMusicSuccess(this);
@@ -825,7 +825,7 @@ class _$_getSearchMusicSuccess implements _getSearchMusicSuccess {
     TResult Function(_Initial value)? initial,
     TResult Function(_LoadInProgress value)? loadInProgress,
     TResult Function(_LoadFailure value)? loadFailure,
-    TResult Function(_getSearchMusicSuccess value)? getSearchMusicSuccess,
+    TResult Function(_GetSearchMusicSuccess value)? getSearchMusicSuccess,
   }) {
     return getSearchMusicSuccess?.call(this);
   }
@@ -836,7 +836,7 @@ class _$_getSearchMusicSuccess implements _getSearchMusicSuccess {
     TResult Function(_Initial value)? initial,
     TResult Function(_LoadInProgress value)? loadInProgress,
     TResult Function(_LoadFailure value)? loadFailure,
-    TResult Function(_getSearchMusicSuccess value)? getSearchMusicSuccess,
+    TResult Function(_GetSearchMusicSuccess value)? getSearchMusicSuccess,
     required TResult orElse(),
   }) {
     if (getSearchMusicSuccess != null) {
@@ -846,13 +846,13 @@ class _$_getSearchMusicSuccess implements _getSearchMusicSuccess {
   }
 }
 
-abstract class _getSearchMusicSuccess implements SearchMusicState {
-  const factory _getSearchMusicSuccess(
-      final SearchMusicResponse searchMusicResponse) = _$_getSearchMusicSuccess;
+abstract class _GetSearchMusicSuccess implements SearchMusicState {
+  const factory _GetSearchMusicSuccess(
+      final SearchMusicResponse searchMusicResponse) = _$_GetSearchMusicSuccess;
 
   SearchMusicResponse get searchMusicResponse =>
       throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  _$$_getSearchMusicSuccessCopyWith<_$_getSearchMusicSuccess> get copyWith =>
+  _$$_GetSearchMusicSuccessCopyWith<_$_GetSearchMusicSuccess> get copyWith =>
       throw _privateConstructorUsedError;
 }

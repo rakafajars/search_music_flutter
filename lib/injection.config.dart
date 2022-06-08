@@ -9,7 +9,7 @@ import 'package:get_it/get_it.dart' as _i1;
 import 'package:injectable/injectable.dart' as _i2;
 import 'package:logger/logger.dart' as _i4;
 
-import 'application/bloc/search_music_bloc.dart' as _i8;
+import 'application/search_bloc/search_music_bloc.dart' as _i8;
 import 'domain/search_music/i_search_music_repository.dart' as _i6;
 import 'infrastructure/core/core_register_module.dart' as _i9;
 import 'infrastructure/search_music/search_music_repository.dart' as _i7;

@@ -1,3 +1,5 @@
+import 'dart:convert';
+
 import 'package:apple_music_search/domain/search_music/i_search_music_repository.dart';
 import 'package:dartz/dartz.dart';
 import 'package:apple_music_search/infrastructure/search_music/search_music_response.dart';
@@ -25,11 +27,12 @@ class SearchMusicRepository implements ISearchMusicRepository {
       _logger.d(response.data);
 
       return right(
-        SearchMusicResponse.fromJson(
+        SearchMusicResponse.fromJson(json.decode(
           response.data,
-        ),
+        )),
       );
     } catch (e) {
+      print("raka $e");
       return left(
         SearchMusicFailure.serverFailure(),
       );

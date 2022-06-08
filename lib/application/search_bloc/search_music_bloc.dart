@@ -25,13 +25,18 @@ class SearchMusicBloc extends Bloc<SearchMusicEvent, SearchMusicState> {
 
           emit(
             searchMusic.fold(
-              (failure) => const SearchMusicState.loadFailure(
-                SearchMusicFailure.serverFailure(),
-              ),
-              (success) => SearchMusicState.getSearchMusicSuccess(
+                (failure) => const SearchMusicState.loadFailure(
+                      SearchMusicFailure.serverFailure(),
+                    ), (success) {
+              return
+                  // success.results!.isNotEmpty
+                  //     ?
+
+                  SearchMusicState.getSearchMusicSuccess(
                 success,
-              ),
-            ),
+              );
+              // : SearchMusicState.initial();
+            }),
           );
         },
       );

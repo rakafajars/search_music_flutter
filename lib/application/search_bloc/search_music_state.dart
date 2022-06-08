@@ -9,5 +9,5 @@ class SearchMusicState with _$SearchMusicState {
 
   const factory SearchMusicState.getSearchMusicSuccess(
     SearchMusicResponse searchMusicResponse,
-  ) = _getSearchMusicSuccess;
+  ) = _GetSearchMusicSuccess;
 }
