@@ -1,9 +1,12 @@
 import 'package:apple_music_search/application/search_bloc/search_music_bloc.dart';
+import 'package:apple_music_search/presentation/home/widget/controls_button_music.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:just_audio/just_audio.dart';
+import 'package:rxdart/rxdart.dart';
 
 import '../../infrastructure/search_music/search_music_response.dart';
+import 'widget/seek_bar_audio.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({
@@ -16,7 +19,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   /// audio
-  late AudioPlayer? _audioPlayer;
+  AudioPlayer _audioPlayer = AudioPlayer();
 
   TextEditingController searchMucisController = TextEditingController();
 
@@ -33,6 +36,39 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
+  Future<void> _initPlayMusic(DataMusic data) async {
+    // Listen to errors during playback.
+    _audioPlayer.playbackEventStream.listen((event) {},
+        onError: (Object e, StackTrace stackTrace) {
+      print('A stream error occurred: $e');
+    });
+    // Try to load audio from a source and catch any errors.
+    try {
+      // AAC example: https://dl.espressif.com/dl/audio/ff-16b-2c-44100hz.aac
+      await _audioPlayer.setAudioSource(
+        AudioSource.uri(
+          Uri.parse(
+            data.previewUrl ?? "",
+          ),
+        ),
+      );
+    } catch (e) {
+      print("Error loading audio source: $e");
+    }
+  }
+
+  Stream<PositionData> get _positionDataStream =>
+      Rx.combineLatest3<Duration, Duration, Duration?, PositionData>(
+        _audioPlayer.positionStream,
+        _audioPlayer.bufferedPositionStream,
+        _audioPlayer.durationStream,
+        (position, bufferedPosition, duration) => PositionData(
+          position,
+          bufferedPosition,
+          duration ?? Duration.zero,
+        ),
+      );
+
   @override
   void initState() {
     _audioPlayer = AudioPlayer();
@@ -42,13 +78,14 @@ class _HomePageState extends State<HomePage> {
   @override
   void dispose() {
     searchMucisController.dispose();
-    _audioPlayer?.dispose();
+    _audioPlayer.dispose();
     super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       body: Column(
         children: [
           Padding(
@@ -77,7 +114,7 @@ class _HomePageState extends State<HomePage> {
                         onTap: () {
                           setState(() {
                             searchMucisController.clear();
-                            _audioPlayer?.playing == false;
+                            _audioPlayer.playing == false;
 
                             _dataMusicSelected = null;
                           });
@@ -134,7 +171,9 @@ class _HomePageState extends State<HomePage> {
                                     return Container(
                                       width: double.infinity,
                                       margin: EdgeInsets.symmetric(
-                                          horizontal: 20, vertical: 8),
+                                        horizontal: 20,
+                                        vertical: 8,
+                                      ),
                                       child: Row(
                                         mainAxisSize: MainAxisSize.max,
                                         crossAxisAlignment:
@@ -177,27 +216,39 @@ class _HomePageState extends State<HomePage> {
                                                     onTap: () {
                                                       _dataMusicSelected =
                                                           dataMusic;
+
+                                                      _initPlayMusic(
+                                                        dataMusic ??
+                                                            DataMusic(),
+                                                      );
                                                       setState(() {});
                                                     },
-                                                    child: Column(
-                                                      mainAxisSize:
-                                                          MainAxisSize.max,
-                                                      crossAxisAlignment:
-                                                          CrossAxisAlignment
-                                                              .start,
-                                                      children: [
-                                                        Text(
-                                                          dataMusic
-                                                                  ?.trackName ??
-                                                              "-",
-                                                        ),
-                                                        SizedBox(height: 4),
-                                                        Text(
-                                                          dataMusic
-                                                                  ?.artistName ??
-                                                              "",
-                                                        ),
-                                                      ],
+                                                    child: Container(
+                                                      color:
+                                                          _dataMusicSelected ==
+                                                                  dataMusic
+                                                              ? Colors.grey[300]
+                                                              : Colors.white,
+                                                      child: Column(
+                                                        mainAxisSize:
+                                                            MainAxisSize.max,
+                                                        crossAxisAlignment:
+                                                            CrossAxisAlignment
+                                                                .start,
+                                                        children: [
+                                                          Text(
+                                                            dataMusic
+                                                                    ?.trackName ??
+                                                                "-",
+                                                          ),
+                                                          SizedBox(height: 4),
+                                                          Text(
+                                                            dataMusic
+                                                                    ?.artistName ??
+                                                                "",
+                                                          ),
+                                                        ],
+                                                      ),
                                                     ),
                                                   ),
                                                 ),
@@ -217,7 +268,7 @@ class _HomePageState extends State<HomePage> {
                               ),
                               _dataMusicSelected != null
                                   ? Container(
-                                      height: 80,
+                                      height: 100,
                                       padding: EdgeInsets.symmetric(
                                         horizontal: 20,
                                       ),
@@ -251,55 +302,26 @@ class _HomePageState extends State<HomePage> {
                                         mainAxisAlignment:
                                             MainAxisAlignment.center,
                                         children: [
-                                          Row(
-                                            mainAxisSize: MainAxisSize.max,
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.spaceBetween,
-                                            crossAxisAlignment:
-                                                CrossAxisAlignment.center,
-                                            children: [
-                                              Icon(
-                                                Icons.skip_previous_sharp,
-                                              ),
-                                              GestureDetector(
-                                                onTap: () async {
-                                                  if (_audioPlayer?.playing ==
-                                                      true) {
-                                                    setState(() {
-                                                      _audioPlayer?.stop();
-
-                                                      _audioPlayer?.playing ==
-                                                          false;
-                                                    });
-                                                  } else {
-                                                    await _audioPlayer?.setUrl(
-                                                      _dataMusicSelected
-                                                              ?.previewUrl ??
-                                                          "",
-                                                    );
-                                                    _audioPlayer?.play();
-
-                                                    setState(() {
-                                                      _audioPlayer?.playing ==
-                                                          true;
-                                                    });
-                                                  }
-                                                },
-                                                child: _audioPlayer?.playing ==
-                                                        true
-                                                    ? Icon(
-                                                        Icons.pause,
-                                                      )
-                                                    : Icon(
-                                                        Icons
-                                                            .play_circle_fill_sharp,
-                                                      ),
-                                              ),
-                                              Icon(
-                                                Icons.skip_next_sharp,
-                                              )
-                                            ],
-                                          )
+                                          ControlButtonMusic(_audioPlayer),
+                                          StreamBuilder<PositionData>(
+                                            stream: _positionDataStream,
+                                            builder: (context, snapshot) {
+                                              final positionData =
+                                                  snapshot.data;
+                                              return SeekBar(
+                                                duration:
+                                                    positionData?.duration ??
+                                                        Duration.zero,
+                                                position:
+                                                    positionData?.position ??
+                                                        Duration.zero,
+                                                bufferedPosition: positionData
+                                                        ?.bufferedPosition ??
+                                                    Duration.zero,
+                                                onChangeEnd: _audioPlayer.seek,
+                                              );
+                                            },
+                                          ),
                                         ],
                                       ),
                                     )
@@ -315,4 +337,12 @@ class _HomePageState extends State<HomePage> {
       ),
     );
   }
+}
+
+class PositionData {
+  final Duration position;
+  final Duration bufferedPosition;
+  final Duration duration;
+
+  PositionData(this.position, this.bufferedPosition, this.duration);
 }
