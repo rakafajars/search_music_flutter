@@ -12,6 +12,16 @@ Mobile Operation System : Android
 
 Android Version : 9
 
+### Feature
+- Search Music
+- Play Music by selected
+- Pause
+- Resume
+- Loopmode
+- Speed Music
+- Volume
+- Indicator Progress music
+
 
 ### Run Project
 
