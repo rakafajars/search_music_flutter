@@ -1,0 +1,4 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+com/example/apple_music_search/BuildConfig.java
+ com.example.apple_music_search.BuildConfig

@@ -14,7 +14,7 @@ String searchMusicResponseToJson(SearchMusicResponse data) =>
 abstract class SearchMusicResponse with _$SearchMusicResponse {
   const factory SearchMusicResponse({
     int? resultCount,
-    List<Result>? results,
+    List<DataMusic>? results,
   }) = _SearchMusicResponse;
 
   factory SearchMusicResponse.fromJson(Map<String, dynamic> json) =>
@@ -22,8 +22,8 @@ abstract class SearchMusicResponse with _$SearchMusicResponse {
 }
 
 @freezed
-abstract class Result with _$Result {
-  const factory Result({
+abstract class DataMusic with _$DataMusic {
+  const factory DataMusic({
     String? wrapperType,
     String? kind,
     int? artistId,
@@ -66,7 +66,8 @@ abstract class Result with _$Result {
     String? longDescription,
     bool? hasITunesExtras,
     String? collectionArtistName,
-  }) = _Result;
+  }) = _DataMusic;
 
-  factory Result.fromJson(Map<String, dynamic> json) => _$ResultFromJson(json);
+  factory DataMusic.fromJson(Map<String, dynamic> json) =>
+      _$DataMusicFromJson(json);
 }

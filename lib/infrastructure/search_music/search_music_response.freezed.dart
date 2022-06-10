@@ -21,7 +21,7 @@ SearchMusicResponse _$SearchMusicResponseFromJson(Map<String, dynamic> json) {
 /// @nodoc
 mixin _$SearchMusicResponse {
   int? get resultCount => throw _privateConstructorUsedError;
-  List<Result>? get results => throw _privateConstructorUsedError;
+  List<DataMusic>? get results => throw _privateConstructorUsedError;
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
@@ -34,7 +34,7 @@ abstract class $SearchMusicResponseCopyWith<$Res> {
   factory $SearchMusicResponseCopyWith(
           SearchMusicResponse value, $Res Function(SearchMusicResponse) then) =
       _$SearchMusicResponseCopyWithImpl<$Res>;
-  $Res call({int? resultCount, List<Result>? results});
+  $Res call({int? resultCount, List<DataMusic>? results});
 }
 
 /// @nodoc
@@ -59,7 +59,7 @@ class _$SearchMusicResponseCopyWithImpl<$Res>
       results: results == freezed
           ? _value.results
           : results // ignore: cast_nullable_to_non_nullable
-              as List<Result>?,
+              as List<DataMusic>?,
     ));
   }
 }
@@ -71,7 +71,7 @@ abstract class _$$_SearchMusicResponseCopyWith<$Res>
           $Res Function(_$_SearchMusicResponse) then) =
       __$$_SearchMusicResponseCopyWithImpl<$Res>;
   @override
-  $Res call({int? resultCount, List<Result>? results});
+  $Res call({int? resultCount, List<DataMusic>? results});
 }
 
 /// @nodoc
@@ -98,7 +98,7 @@ class __$$_SearchMusicResponseCopyWithImpl<$Res>
       results: results == freezed
           ? _value._results
           : results // ignore: cast_nullable_to_non_nullable
-              as List<Result>?,
+              as List<DataMusic>?,
     ));
   }
 }
@@ -106,7 +106,8 @@ class __$$_SearchMusicResponseCopyWithImpl<$Res>
 /// @nodoc
 @JsonSerializable()
 class _$_SearchMusicResponse implements _SearchMusicResponse {
-  const _$_SearchMusicResponse({this.resultCount, final List<Result>? results})
+  const _$_SearchMusicResponse(
+      {this.resultCount, final List<DataMusic>? results})
       : _results = results;
 
   factory _$_SearchMusicResponse.fromJson(Map<String, dynamic> json) =>
@@ -114,9 +115,9 @@ class _$_SearchMusicResponse implements _SearchMusicResponse {
 
   @override
   final int? resultCount;
-  final List<Result>? _results;
+  final List<DataMusic>? _results;
   @override
-  List<Result>? get results {
+  List<DataMusic>? get results {
     final value = _results;
     if (value == null) return null;
     // ignore: implicit_dynamic_type
@@ -160,7 +161,7 @@ class _$_SearchMusicResponse implements _SearchMusicResponse {
 abstract class _SearchMusicResponse implements SearchMusicResponse {
   const factory _SearchMusicResponse(
       {final int? resultCount,
-      final List<Result>? results}) = _$_SearchMusicResponse;
+      final List<DataMusic>? results}) = _$_SearchMusicResponse;
 
   factory _SearchMusicResponse.fromJson(Map<String, dynamic> json) =
       _$_SearchMusicResponse.fromJson;
@@ -168,19 +169,19 @@ abstract class _SearchMusicResponse implements SearchMusicResponse {
   @override
   int? get resultCount => throw _privateConstructorUsedError;
   @override
-  List<Result>? get results => throw _privateConstructorUsedError;
+  List<DataMusic>? get results => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
   _$$_SearchMusicResponseCopyWith<_$_SearchMusicResponse> get copyWith =>
       throw _privateConstructorUsedError;
 }
 
-Result _$ResultFromJson(Map<String, dynamic> json) {
-  return _Result.fromJson(json);
+DataMusic _$DataMusicFromJson(Map<String, dynamic> json) {
+  return _DataMusic.fromJson(json);
 }
 
 /// @nodoc
-mixin _$Result {
+mixin _$DataMusic {
   String? get wrapperType => throw _privateConstructorUsedError;
   String? get kind => throw _privateConstructorUsedError;
   int? get artistId => throw _privateConstructorUsedError;
@@ -226,13 +227,14 @@ mixin _$Result {
 
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
   @JsonKey(ignore: true)
-  $ResultCopyWith<Result> get copyWith => throw _privateConstructorUsedError;
+  $DataMusicCopyWith<DataMusic> get copyWith =>
+      throw _privateConstructorUsedError;
 }
 
 /// @nodoc
-abstract class $ResultCopyWith<$Res> {
-  factory $ResultCopyWith(Result value, $Res Function(Result) then) =
-      _$ResultCopyWithImpl<$Res>;
+abstract class $DataMusicCopyWith<$Res> {
+  factory $DataMusicCopyWith(DataMusic value, $Res Function(DataMusic) then) =
+      _$DataMusicCopyWithImpl<$Res>;
   $Res call(
       {String? wrapperType,
       String? kind,
@@ -279,12 +281,12 @@ abstract class $ResultCopyWith<$Res> {
 }
 
 /// @nodoc
-class _$ResultCopyWithImpl<$Res> implements $ResultCopyWith<$Res> {
-  _$ResultCopyWithImpl(this._value, this._then);
+class _$DataMusicCopyWithImpl<$Res> implements $DataMusicCopyWith<$Res> {
+  _$DataMusicCopyWithImpl(this._value, this._then);
 
-  final Result _value;
+  final DataMusic _value;
   // ignore: unused_field
-  final $Res Function(Result) _then;
+  final $Res Function(DataMusic) _then;
 
   @override
   $Res call({
@@ -505,9 +507,10 @@ class _$ResultCopyWithImpl<$Res> implements $ResultCopyWith<$Res> {
 }
 
 /// @nodoc
-abstract class _$$_ResultCopyWith<$Res> implements $ResultCopyWith<$Res> {
-  factory _$$_ResultCopyWith(_$_Result value, $Res Function(_$_Result) then) =
-      __$$_ResultCopyWithImpl<$Res>;
+abstract class _$$_DataMusicCopyWith<$Res> implements $DataMusicCopyWith<$Res> {
+  factory _$$_DataMusicCopyWith(
+          _$_DataMusic value, $Res Function(_$_DataMusic) then) =
+      __$$_DataMusicCopyWithImpl<$Res>;
   @override
   $Res call(
       {String? wrapperType,
@@ -555,13 +558,14 @@ abstract class _$$_ResultCopyWith<$Res> implements $ResultCopyWith<$Res> {
 }
 
 /// @nodoc
-class __$$_ResultCopyWithImpl<$Res> extends _$ResultCopyWithImpl<$Res>
-    implements _$$_ResultCopyWith<$Res> {
-  __$$_ResultCopyWithImpl(_$_Result _value, $Res Function(_$_Result) _then)
-      : super(_value, (v) => _then(v as _$_Result));
+class __$$_DataMusicCopyWithImpl<$Res> extends _$DataMusicCopyWithImpl<$Res>
+    implements _$$_DataMusicCopyWith<$Res> {
+  __$$_DataMusicCopyWithImpl(
+      _$_DataMusic _value, $Res Function(_$_DataMusic) _then)
+      : super(_value, (v) => _then(v as _$_DataMusic));
 
   @override
-  _$_Result get _value => super._value as _$_Result;
+  _$_DataMusic get _value => super._value as _$_DataMusic;
 
   @override
   $Res call({
@@ -608,7 +612,7 @@ class __$$_ResultCopyWithImpl<$Res> extends _$ResultCopyWithImpl<$Res>
     Object? hasITunesExtras = freezed,
     Object? collectionArtistName = freezed,
   }) {
-    return _then(_$_Result(
+    return _then(_$_DataMusic(
       wrapperType: wrapperType == freezed
           ? _value.wrapperType
           : wrapperType // ignore: cast_nullable_to_non_nullable
@@ -783,8 +787,8 @@ class __$$_ResultCopyWithImpl<$Res> extends _$ResultCopyWithImpl<$Res>
 
 /// @nodoc
 @JsonSerializable()
-class _$_Result implements _Result {
-  const _$_Result(
+class _$_DataMusic implements _DataMusic {
+  const _$_DataMusic(
       {this.wrapperType,
       this.kind,
       this.artistId,
@@ -828,8 +832,8 @@ class _$_Result implements _Result {
       this.hasITunesExtras,
       this.collectionArtistName});
 
-  factory _$_Result.fromJson(Map<String, dynamic> json) =>
-      _$$_ResultFromJson(json);
+  factory _$_DataMusic.fromJson(Map<String, dynamic> json) =>
+      _$$_DataMusicFromJson(json);
 
   @override
   final String? wrapperType;
@@ -918,14 +922,14 @@ class _$_Result implements _Result {
 
   @override
   String toString() {
-    return 'Result(wrapperType: $wrapperType, kind: $kind, artistId: $artistId, collectionId: $collectionId, trackId: $trackId, artistName: $artistName, collectionName: $collectionName, trackName: $trackName, collectionCensoredName: $collectionCensoredName, trackCensoredName: $trackCensoredName, artistViewUrl: $artistViewUrl, collectionViewUrl: $collectionViewUrl, trackViewUrl: $trackViewUrl, previewUrl: $previewUrl, artworkUrl30: $artworkUrl30, artworkUrl60: $artworkUrl60, artworkUrl100: $artworkUrl100, collectionPrice: $collectionPrice, trackPrice: $trackPrice, releaseDate: $releaseDate, collectionExplicitness: $collectionExplicitness, trackExplicitness: $trackExplicitness, discCount: $discCount, discNumber: $discNumber, trackCount: $trackCount, trackNumber: $trackNumber, trackTimeMillis: $trackTimeMillis, country: $country, currency: $currency, primaryGenreName: $primaryGenreName, isStreamable: $isStreamable, collectionArtistId: $collectionArtistId, collectionArtistViewUrl: $collectionArtistViewUrl, trackRentalPrice: $trackRentalPrice, collectionHdPrice: $collectionHdPrice, trackHdPrice: $trackHdPrice, trackHdRentalPrice: $trackHdRentalPrice, contentAdvisoryRating: $contentAdvisoryRating, shortDescription: $shortDescription, longDescription: $longDescription, hasITunesExtras: $hasITunesExtras, collectionArtistName: $collectionArtistName)';
+    return 'DataMusic(wrapperType: $wrapperType, kind: $kind, artistId: $artistId, collectionId: $collectionId, trackId: $trackId, artistName: $artistName, collectionName: $collectionName, trackName: $trackName, collectionCensoredName: $collectionCensoredName, trackCensoredName: $trackCensoredName, artistViewUrl: $artistViewUrl, collectionViewUrl: $collectionViewUrl, trackViewUrl: $trackViewUrl, previewUrl: $previewUrl, artworkUrl30: $artworkUrl30, artworkUrl60: $artworkUrl60, artworkUrl100: $artworkUrl100, collectionPrice: $collectionPrice, trackPrice: $trackPrice, releaseDate: $releaseDate, collectionExplicitness: $collectionExplicitness, trackExplicitness: $trackExplicitness, discCount: $discCount, discNumber: $discNumber, trackCount: $trackCount, trackNumber: $trackNumber, trackTimeMillis: $trackTimeMillis, country: $country, currency: $currency, primaryGenreName: $primaryGenreName, isStreamable: $isStreamable, collectionArtistId: $collectionArtistId, collectionArtistViewUrl: $collectionArtistViewUrl, trackRentalPrice: $trackRentalPrice, collectionHdPrice: $collectionHdPrice, trackHdPrice: $trackHdPrice, trackHdRentalPrice: $trackHdRentalPrice, contentAdvisoryRating: $contentAdvisoryRating, shortDescription: $shortDescription, longDescription: $longDescription, hasITunesExtras: $hasITunesExtras, collectionArtistName: $collectionArtistName)';
   }
 
   @override
   bool operator ==(dynamic other) {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
-            other is _$_Result &&
+            other is _$_DataMusic &&
             const DeepCollectionEquality()
                 .equals(other.wrapperType, wrapperType) &&
             const DeepCollectionEquality().equals(other.kind, kind) &&
@@ -1055,17 +1059,17 @@ class _$_Result implements _Result {
 
   @JsonKey(ignore: true)
   @override
-  _$$_ResultCopyWith<_$_Result> get copyWith =>
-      __$$_ResultCopyWithImpl<_$_Result>(this, _$identity);
+  _$$_DataMusicCopyWith<_$_DataMusic> get copyWith =>
+      __$$_DataMusicCopyWithImpl<_$_DataMusic>(this, _$identity);
 
   @override
   Map<String, dynamic> toJson() {
-    return _$$_ResultToJson(this);
+    return _$$_DataMusicToJson(this);
   }
 }
 
-abstract class _Result implements Result {
-  const factory _Result(
+abstract class _DataMusic implements DataMusic {
+  const factory _DataMusic(
       {final String? wrapperType,
       final String? kind,
       final int? artistId,
@@ -1107,9 +1111,10 @@ abstract class _Result implements Result {
       final String? shortDescription,
       final String? longDescription,
       final bool? hasITunesExtras,
-      final String? collectionArtistName}) = _$_Result;
+      final String? collectionArtistName}) = _$_DataMusic;
 
-  factory _Result.fromJson(Map<String, dynamic> json) = _$_Result.fromJson;
+  factory _DataMusic.fromJson(Map<String, dynamic> json) =
+      _$_DataMusic.fromJson;
 
   @override
   String? get wrapperType => throw _privateConstructorUsedError;
@@ -1197,6 +1202,6 @@ abstract class _Result implements Result {
   String? get collectionArtistName => throw _privateConstructorUsedError;
   @override
   @JsonKey(ignore: true)
-  _$$_ResultCopyWith<_$_Result> get copyWith =>
+  _$$_DataMusicCopyWith<_$_DataMusic> get copyWith =>
       throw _privateConstructorUsedError;
 }

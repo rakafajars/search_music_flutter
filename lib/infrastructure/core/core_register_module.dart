@@ -1,6 +1,7 @@
 import 'package:injectable/injectable.dart';
 import 'package:dio/dio.dart';
 import 'package:dio_logging_interceptor/dio_logging_interceptor.dart';
+import 'package:just_audio/just_audio.dart';
 import 'package:logger/logger.dart' as loggerD;
 
 @module
@@ -28,4 +29,7 @@ abstract class CoreRegisterModule {
 
   @lazySingleton
   loggerD.Logger get logger => loggerD.Logger();
+
+  @lazySingleton
+  AudioPlayer get audioPlayer => AudioPlayer();
 }

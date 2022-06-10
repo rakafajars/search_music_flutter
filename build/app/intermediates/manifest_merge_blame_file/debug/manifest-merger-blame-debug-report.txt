@@ -1,0 +1,391 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.apple_music_search"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+9        android:targetSdkVersion="31" />
+10    <!--
+11         Flutter needs it to communicate with the running application
+12         to allow setting breakpoints, to provide hot reload, etc.
+13    -->
+14    <uses-permission android:name="android.permission.INTERNET" />
+14-->/Users/rakafajar/Documents/Project/Belajar/search_music_flutter/android/app/src/main/AndroidManifest.xml:3:5-66
+14-->/Users/rakafajar/Documents/Project/Belajar/search_music_flutter/android/app/src/main/AndroidManifest.xml:3:22-64
+15    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+15-->[:flutter_local_notifications] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-81
+15-->[:flutter_local_notifications] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-78
+16    <uses-permission android:name="android.permission.VIBRATE" />
+16-->[:flutter_local_notifications] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-66
+16-->[:flutter_local_notifications] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-63
+17    <uses-permission android:name="android.permission.USE_FULL_SCREEN_INTENT" />
+17-->[:flutter_local_notifications] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-81
+17-->[:flutter_local_notifications] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-78
+18    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+18-->[:flutter_local_notifications] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:10:5-79
+18-->[:flutter_local_notifications] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:10:22-76
+19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+19-->[:connectivity_plus] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:7:5-79
+19-->[:connectivity_plus] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/connectivity_plus/intermediates/library_manifest/debug/AndroidManifest.xml:7:22-76
+20    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+20-->[:open_file] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:8:5-83
+20-->[:open_file] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:8:22-80
+21    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+21-->[:open_file] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:9:5-80
+21-->[:open_file] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:9:22-77
+22    <uses-permission android:name="android.permission.WAKE_LOCK" />
+22-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:25:5-68
+22-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:25:22-65
+23    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+23-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:28:5-77
+23-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:28:22-74
+24
+25    <queries>
+25-->[androidx.media2:media2-session:1.2.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/ceed3f2a94aa97e10ce61a44d59bd533/jetified-media2-session-1.2.0/AndroidManifest.xml:24:5-34:15
+26        <intent>
+26-->[androidx.media2:media2-session:1.2.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/ceed3f2a94aa97e10ce61a44d59bd533/jetified-media2-session-1.2.0/AndroidManifest.xml:25:9-27:18
+27            <action android:name="android.media.browse.MediaBrowserService" />
+27-->[androidx.media2:media2-session:1.2.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/ceed3f2a94aa97e10ce61a44d59bd533/jetified-media2-session-1.2.0/AndroidManifest.xml:26:13-79
+27-->[androidx.media2:media2-session:1.2.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/ceed3f2a94aa97e10ce61a44d59bd533/jetified-media2-session-1.2.0/AndroidManifest.xml:26:21-76
+28        </intent>
+29        <intent>
+29-->[androidx.media2:media2-session:1.2.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/ceed3f2a94aa97e10ce61a44d59bd533/jetified-media2-session-1.2.0/AndroidManifest.xml:28:9-30:18
+30            <action android:name="androidx.media2.session.MediaSessionService" />
+30-->[androidx.media2:media2-session:1.2.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/ceed3f2a94aa97e10ce61a44d59bd533/jetified-media2-session-1.2.0/AndroidManifest.xml:29:13-82
+30-->[androidx.media2:media2-session:1.2.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/ceed3f2a94aa97e10ce61a44d59bd533/jetified-media2-session-1.2.0/AndroidManifest.xml:29:21-79
+31        </intent>
+32        <intent>
+32-->[androidx.media2:media2-session:1.2.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/ceed3f2a94aa97e10ce61a44d59bd533/jetified-media2-session-1.2.0/AndroidManifest.xml:31:9-33:18
+33            <action android:name="androidx.media2.session.MediaLibraryService" />
+33-->[androidx.media2:media2-session:1.2.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/ceed3f2a94aa97e10ce61a44d59bd533/jetified-media2-session-1.2.0/AndroidManifest.xml:32:13-82
+33-->[androidx.media2:media2-session:1.2.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/ceed3f2a94aa97e10ce61a44d59bd533/jetified-media2-session-1.2.0/AndroidManifest.xml:32:21-79
+34        </intent>
+35    </queries>
+36
+37    <application
+38        android:name="android.app.Application"
+39        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+39-->[androidx.core:core:1.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/b9a960218f5163997c0fdfa3d3078c0e/core-1.7.0/AndroidManifest.xml:24:18-86
+40        android:debuggable="true"
+41        android:icon="@mipmap/ic_launcher"
+42        android:label="apple_music_search"
+43        android:usesCleartextTraffic="true" >
+44        <activity
+45            android:name="com.example.apple_music_search.MainActivity"
+46            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+47            android:exported="true"
+48            android:hardwareAccelerated="true"
+49            android:launchMode="singleTop"
+50            android:theme="@style/LaunchTheme"
+51            android:windowSoftInputMode="adjustResize" >
+52
+53            <!--
+54                 Specifies an Android theme to apply to this Activity as soon as
+55                 the Android process has started. This theme is visible to the user
+56                 while the Flutter UI initializes. After that, this theme continues
+57                 to determine the Window background behind the Flutter UI.
+58            -->
+59            <meta-data
+60                android:name="io.flutter.embedding.android.NormalTheme"
+61                android:resource="@style/NormalTheme" />
+62
+63            <intent-filter>
+64                <action android:name="android.intent.action.MAIN" />
+65
+66                <category android:name="android.intent.category.LAUNCHER" />
+67            </intent-filter>
+68        </activity>
+69        <!--
+70             Don't delete the meta-data below.
+71             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java
+72        -->
+73        <meta-data
+74            android:name="flutterEmbedding"
+75            android:value="2" />
+76
+77        <receiver
+77-->[:flutter_local_notifications] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:13:9-15:40
+78            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationReceiver"
+78-->[:flutter_local_notifications] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-97
+79            android:exported="false" />
+79-->[:flutter_local_notifications] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
+80        <receiver
+80-->[:flutter_local_notifications] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-25:20
+81            android:name="com.dexterous.flutterlocalnotifications.ScheduledNotificationBootReceiver"
+81-->[:flutter_local_notifications] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-101
+82            android:exported="false" >
+82-->[:flutter_local_notifications] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
+83            <intent-filter>
+83-->[:flutter_local_notifications] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-24:29
+84                <action android:name="android.intent.action.BOOT_COMPLETED" />
+84-->[:flutter_local_notifications] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:20:17-79
+84-->[:flutter_local_notifications] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:20:25-76
+85                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+85-->[:flutter_local_notifications] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:21:17-84
+85-->[:flutter_local_notifications] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:21:25-81
+86                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+86-->[:flutter_local_notifications] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:22:17-82
+86-->[:flutter_local_notifications] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:22:25-79
+87                <action android:name="com.htc.intent.action.QUICKBOOT_POWERON" />
+87-->[:flutter_local_notifications] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:23:17-82
+87-->[:flutter_local_notifications] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:23:25-79
+88            </intent-filter>
+89        </receiver>
+90
+91        <provider
+91-->[:open_file] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:12:9-21:20
+92            android:name="com.crazecoder.openfile.FileProvider"
+92-->[:open_file] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:13:13-64
+93            android:authorities="com.example.apple_music_search.fileProvider.com.crazecoder.openfile"
+93-->[:open_file] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:14:13-88
+94            android:exported="false"
+94-->[:open_file] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:15:13-37
+95            android:grantUriPermissions="true" >
+95-->[:open_file] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:16:13-47
+96            <meta-data
+96-->[:open_file] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-20:53
+97                android:name="android.support.FILE_PROVIDER_PATHS"
+97-->[:open_file] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-67
+98                android:resource="@xml/filepaths" />
+98-->[:open_file] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:20:17-50
+99        </provider>
+100        <provider
+100-->[:share] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/share/intermediates/library_manifest/debug/AndroidManifest.xml:8:9-16:20
+101            android:name="io.flutter.plugins.share.ShareFileProvider"
+101-->[:share] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/share/intermediates/library_manifest/debug/AndroidManifest.xml:9:13-70
+102            android:authorities="com.example.apple_music_search.flutter.share_provider"
+102-->[:share] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/share/intermediates/library_manifest/debug/AndroidManifest.xml:10:13-74
+103            android:exported="false"
+103-->[:share] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/share/intermediates/library_manifest/debug/AndroidManifest.xml:11:13-37
+104            android:grantUriPermissions="true" >
+104-->[:share] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/share/intermediates/library_manifest/debug/AndroidManifest.xml:12:13-47
+105            <meta-data
+105-->[:open_file] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-20:53
+106                android:name="android.support.FILE_PROVIDER_PATHS"
+106-->[:open_file] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:19:17-67
+107                android:resource="@xml/flutter_share_file_paths" />
+107-->[:open_file] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/open_file/intermediates/library_manifest/debug/AndroidManifest.xml:20:17-50
+108        </provider>
+109
+110        <uses-library
+110-->[androidx.window:window:1.0.0-beta04] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:25:9-27:40
+111            android:name="androidx.window.extensions"
+111-->[androidx.window:window:1.0.0-beta04] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:26:13-54
+112            android:required="false" />
+112-->[androidx.window:window:1.0.0-beta04] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:27:13-37
+113        <uses-library
+113-->[androidx.window:window:1.0.0-beta04] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:28:9-30:40
+114            android:name="androidx.window.sidecar"
+114-->[androidx.window:window:1.0.0-beta04] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:29:13-51
+115            android:required="false" />
+115-->[androidx.window:window:1.0.0-beta04] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/03c633e46d75bfb21f082f0417f55161/jetified-window-1.0.0-beta04/AndroidManifest.xml:30:13-37
+116
+117        <provider
+117-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:31:9-39:20
+118            android:name="androidx.startup.InitializationProvider"
+118-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:32:13-67
+119            android:authorities="com.example.apple_music_search.androidx-startup"
+119-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:33:13-68
+120            android:exported="false" >
+120-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:34:13-37
+121            <meta-data
+121-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:36:13-38:52
+122                android:name="androidx.work.WorkManagerInitializer"
+122-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:37:17-68
+123                android:value="androidx.startup" />
+123-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:38:17-49
+124        </provider>
+125
+126        <service
+126-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:41:9-46:35
+127            android:name="androidx.work.impl.background.systemalarm.SystemAlarmService"
+127-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:42:13-88
+128            android:directBootAware="false"
+128-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:43:13-44
+129            android:enabled="@bool/enable_system_alarm_service_default"
+129-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:44:13-72
+130            android:exported="false" />
+130-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:45:13-37
+131        <service
+131-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:47:9-53:35
+132            android:name="androidx.work.impl.background.systemjob.SystemJobService"
+132-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:48:13-84
+133            android:directBootAware="false"
+133-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:49:13-44
+134            android:enabled="@bool/enable_system_job_service_default"
+134-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:50:13-70
+135            android:exported="true"
+135-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:51:13-36
+136            android:permission="android.permission.BIND_JOB_SERVICE" />
+136-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:52:13-69
+137        <service
+137-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:54:9-59:35
+138            android:name="androidx.work.impl.foreground.SystemForegroundService"
+138-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:55:13-81
+139            android:directBootAware="false"
+139-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:56:13-44
+140            android:enabled="@bool/enable_system_foreground_service_default"
+140-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:57:13-77
+141            android:exported="false" />
+141-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:58:13-37
+142
+143        <receiver
+143-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:61:9-66:35
+144            android:name="androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver"
+144-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:62:13-88
+145            android:directBootAware="false"
+145-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:63:13-44
+146            android:enabled="true"
+146-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:64:13-35
+147            android:exported="false" />
+147-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:65:13-37
+148        <receiver
+148-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:67:9-77:20
+149            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy"
+149-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:68:13-106
+150            android:directBootAware="false"
+150-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:69:13-44
+151            android:enabled="false"
+151-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:70:13-36
+152            android:exported="false" >
+152-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:71:13-37
+153            <intent-filter>
+153-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:73:13-76:29
+154                <action android:name="android.intent.action.ACTION_POWER_CONNECTED" />
+154-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:74:17-87
+154-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:74:25-84
+155                <action android:name="android.intent.action.ACTION_POWER_DISCONNECTED" />
+155-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:75:17-90
+155-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:75:25-87
+156            </intent-filter>
+157        </receiver>
+158        <receiver
+158-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:78:9-88:20
+159            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy"
+159-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:79:13-104
+160            android:directBootAware="false"
+160-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:80:13-44
+161            android:enabled="false"
+161-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:81:13-36
+162            android:exported="false" >
+162-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:82:13-37
+163            <intent-filter>
+163-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:84:13-87:29
+164                <action android:name="android.intent.action.BATTERY_OKAY" />
+164-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:85:17-77
+164-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:85:25-74
+165                <action android:name="android.intent.action.BATTERY_LOW" />
+165-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:86:17-76
+165-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:86:25-73
+166            </intent-filter>
+167        </receiver>
+168        <receiver
+168-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:89:9-99:20
+169            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy"
+169-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:90:13-104
+170            android:directBootAware="false"
+170-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:91:13-44
+171            android:enabled="false"
+171-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:92:13-36
+172            android:exported="false" >
+172-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:93:13-37
+173            <intent-filter>
+173-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:95:13-98:29
+174                <action android:name="android.intent.action.DEVICE_STORAGE_LOW" />
+174-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:96:17-83
+174-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:96:25-80
+175                <action android:name="android.intent.action.DEVICE_STORAGE_OK" />
+175-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:97:17-82
+175-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:97:25-79
+176            </intent-filter>
+177        </receiver>
+178        <receiver
+178-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:100:9-109:20
+179            android:name="androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy"
+179-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:101:13-103
+180            android:directBootAware="false"
+180-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:102:13-44
+181            android:enabled="false"
+181-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:103:13-36
+182            android:exported="false" >
+182-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:104:13-37
+183            <intent-filter>
+183-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:106:13-108:29
+184                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+184-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:107:17-79
+184-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:107:25-76
+185            </intent-filter>
+186        </receiver>
+187        <receiver
+187-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:110:9-121:20
+188            android:name="androidx.work.impl.background.systemalarm.RescheduleReceiver"
+188-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:111:13-88
+189            android:directBootAware="false"
+189-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:112:13-44
+190            android:enabled="false"
+190-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:113:13-36
+191            android:exported="false" >
+191-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:114:13-37
+192            <intent-filter>
+192-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:116:13-120:29
+193                <action android:name="android.intent.action.BOOT_COMPLETED" />
+193-->[:flutter_local_notifications] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:20:17-79
+193-->[:flutter_local_notifications] /Users/rakafajar/Documents/Project/Belajar/search_music_flutter/build/flutter_local_notifications/intermediates/library_manifest/debug/AndroidManifest.xml:20:25-76
+194                <action android:name="android.intent.action.TIME_SET" />
+194-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:118:17-73
+194-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:118:25-70
+195                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+195-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:119:17-81
+195-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:119:25-78
+196            </intent-filter>
+197        </receiver>
+198        <receiver
+198-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:122:9-131:20
+199            android:name="androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver"
+199-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:123:13-99
+200            android:directBootAware="false"
+200-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:124:13-44
+201            android:enabled="@bool/enable_system_alarm_service_default"
+201-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:125:13-72
+202            android:exported="false" >
+202-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:126:13-37
+203            <intent-filter>
+203-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:128:13-130:29
+204                <action android:name="androidx.work.impl.background.systemalarm.UpdateProxies" />
+204-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:129:17-98
+204-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:129:25-95
+205            </intent-filter>
+206        </receiver>
+207        <receiver
+207-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:132:9-142:20
+208            android:name="androidx.work.impl.diagnostics.DiagnosticsReceiver"
+208-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:133:13-78
+209            android:directBootAware="false"
+209-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:134:13-44
+210            android:enabled="true"
+210-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:135:13-35
+211            android:exported="true"
+211-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:136:13-36
+212            android:permission="android.permission.DUMP" >
+212-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:137:13-57
+213            <intent-filter>
+213-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:139:13-141:29
+214                <action android:name="androidx.work.diagnostics.REQUEST_DIAGNOSTICS" />
+214-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:140:17-88
+214-->[androidx.work:work-runtime:2.7.0] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/fe874bc08108b4385ecbba01f969818b/work-runtime-2.7.0/AndroidManifest.xml:140:25-85
+215            </intent-filter>
+216        </receiver>
+217
+218        <service
+218-->[androidx.room:room-runtime:2.2.5] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/5a9abbd9b8f0f835c4fddb4cf7ae6694/room-runtime-2.2.5/AndroidManifest.xml:25:9-28:40
+219            android:name="androidx.room.MultiInstanceInvalidationService"
+219-->[androidx.room:room-runtime:2.2.5] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/5a9abbd9b8f0f835c4fddb4cf7ae6694/room-runtime-2.2.5/AndroidManifest.xml:26:13-74
+220            android:directBootAware="true"
+220-->[androidx.room:room-runtime:2.2.5] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/5a9abbd9b8f0f835c4fddb4cf7ae6694/room-runtime-2.2.5/AndroidManifest.xml:27:13-43
+221            android:exported="false" />
+221-->[androidx.room:room-runtime:2.2.5] /Users/rakafajar/.gradle/caches/transforms-2/files-2.1/5a9abbd9b8f0f835c4fddb4cf7ae6694/room-runtime-2.2.5/AndroidManifest.xml:28:13-37
+222    </application>
+223
+224</manifest>

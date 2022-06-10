@@ -11,7 +11,7 @@ _$_SearchMusicResponse _$$_SearchMusicResponseFromJson(
     _$_SearchMusicResponse(
       resultCount: json['resultCount'] as int?,
       results: (json['results'] as List<dynamic>?)
-          ?.map((e) => Result.fromJson(e as Map<String, dynamic>))
+          ?.map((e) => DataMusic.fromJson(e as Map<String, dynamic>))
           .toList(),
     );
 
@@ -22,7 +22,7 @@ Map<String, dynamic> _$$_SearchMusicResponseToJson(
       'results': instance.results,
     };
 
-_$_Result _$$_ResultFromJson(Map<String, dynamic> json) => _$_Result(
+_$_DataMusic _$$_DataMusicFromJson(Map<String, dynamic> json) => _$_DataMusic(
       wrapperType: json['wrapperType'] as String?,
       kind: json['kind'] as String?,
       artistId: json['artistId'] as int?,
@@ -67,7 +67,8 @@ _$_Result _$$_ResultFromJson(Map<String, dynamic> json) => _$_Result(
       collectionArtistName: json['collectionArtistName'] as String?,
     );
 
-Map<String, dynamic> _$$_ResultToJson(_$_Result instance) => <String, dynamic>{
+Map<String, dynamic> _$$_DataMusicToJson(_$_DataMusic instance) =>
+    <String, dynamic>{
       'wrapperType': instance.wrapperType,
       'kind': instance.kind,
       'artistId': instance.artistId,
